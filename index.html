@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">MyPortfolio</div>
+
+    <nav id="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+</header>
+
+<section id="home" class="section">
+    <h1>Hello, I'm Umamageswari.P </h1>
+    <p>I am a final-year student with a strong interest
+         in UI/UX design and emerging technologies.
+          My academic projects reflect a balance between user-centered
+           design and practical software development.</p>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a final-year student aspiring to work as a Full Stack Developer,
+        with hands-on experience in designing and developing user-focused web applications. My work combines
+        UI/UX principles with frontend development to build interfaces that are both functional and user-friendly.</p>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <button>Project 1</button>
+    <button>Project 2</button>
+    <button>Project 3</button>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: student@email.com</p>
+</section>
+
+<footer>
+    <p>© 2026 MyPortfolio. All Rights Reserved.</p>
+</footer>
+
+<script >
+    function toggleMenu() {
+    const nav = document.getElementById("nav-menu");
+    nav.classList.toggle("active");
+}
+</script>
+</body>
+</html>
